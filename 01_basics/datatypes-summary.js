@@ -39,4 +39,28 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
+
+
+// ++++++++++++++++++ Memory +++++++++++++/
+
+//  Stack(Primitive), Heap(Non-Primitivre)
+
+let myname = "Abhishek"
+
+let myanothername = myname
+myanothername = "Abhis"
+
+// console.log(myname);
+// console.log(myanothername);
+
+let Abhishek = {
+    email : "abhishek@gmail.com",
+    upi : "abhishek@ybl"
+}
+
+let Abhis = Abhishek
+
+Abhis.upi = "abhis@ybl.com"
+
+console.log(Abhis);
