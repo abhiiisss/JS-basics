@@ -54,18 +54,45 @@ const newUser = [
     
 ] // database type objects
 
-console.log(newUser[1].email); //accesing them in the terms of string
-console.log(tinderUser);
+// console.log(newUser[1].email); //accesing them in the terms of string
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //accessing the keys from object which comes as a string
-console.log(Object.values(tinderUser)); 
+// console.log(Object.keys(tinderUser)); //accessing the keys from object which comes as a string
+
+// console.log(Object.values(tinderUser)); 
 //accessing the values from object which comes as a string
 
-console.log(Object.entries(tinderUser)); //it gives the each key value pair in strings
+// console.log(Object.entries(tinderUser)); //it gives the each key value pair in strings
 
-console.log(tinderUser.hasOwnProperty("IsLogged")); // it checks whether the have this value or not and gives the output in boolean
-
-
+// console.log(tinderUser.hasOwnProperty("IsLogged")); // it checks whether the have this value or not and gives the output in boolean
 
 
 
+//Destructuring of objects
+
+const course = {
+    course : "hsitory",
+    Price: "999",
+    courseInstructor : "abhis"
+}
+
+// console.log(course.courseInstructor); //one-way to destruct the object
+
+const {courseInstructor: Instructor} = course; //another way to destruct the objects
+
+console.log(Instructor);
+
+// json
+
+{
+    "name": "ABHIS",
+    "age": "22"
+    "location": "Mumbai"
+} //json file format
+
+
+[
+    {},
+    {},
+    {}
+] // multiple objects in a string(JSON file format)
