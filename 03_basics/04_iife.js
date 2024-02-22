@@ -19,4 +19,4 @@ console.log('connection successfull');
 ( (name) => { //Unnamed IIFE
 console.log(`connection successfull, ${name}`);
 })("abhis"); 
-//iife with arrow function here we have given arguments and parametersz
+//iife with arrow function here we have given arguments and parameters
