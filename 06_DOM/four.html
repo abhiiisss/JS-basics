@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <ul class = "lang">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    //random try
+    //const newLi = document.createElement('python');
+    //console.log(newLi);
+    //document.body.appendChild(newLi);
+
+    //design a function and add a list using the function
+    function addlanguage(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.lang').appendChild(li)
+    }
+    addlanguage("pyhton")
+    addlanguage("typescript")
+
+
+    //optimized approach --using DSA
+     function addNewLanguage(langname) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.lang').appendChild(li)
+     }
+
+    addNewLanguage('golang')
+
+    //edit
+    //replace typescript with a new language sql
+    const newLi = document.querySelector("li:nth-child(3)")
+    //newLi.innerHTML = "Mojo" //replace using inner html
+    const newli = document.createElement('li');
+    newli.textContent = "SQL"
+    newLi.replaceWith(newli)
+    
+    //replace using outer html
+    const newlang = document.querySelector("li:first-child")
+    newlang.outerHTML = '<li>TypeScript</li>'
+        
+    //remove
+    //remove go lang
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+    
+</script>
+
+</html>
