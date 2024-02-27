@@ -9,7 +9,7 @@ const coding = ["py","js","ty","go"]
 // you cannot take the items into variable and call it outside like a function in for each loop.
 
 
-//filter -- it gives the value back alternate of for each
+//filter -- true/false --it gives the value back alternate of for each(jo true hoga wohi pass hoga)
 
 //let newNums = Nums.filter((num) => {
      //return num > 4
