@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <div class="parent" >
+        <!--this is a comment to get two more spaces in the node list -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    // select a parent element and get all the child elements
+    const parent = document.querySelector('.parent');
+    //console.log(parent.children[1].innerHTML);
+
+    //perform a for loop to get all the childrens
+    //for (let i = 0; i < parent.children.length; i++) {
+         //console.log(parent.children[i].innerHTML);
+        
+    //}
+     
+     //change the 2 children color to orange
+     parent.children[1].style.color = "orange";
+
+     //get the first and last element using child element
+     //console.log(parent.firstElementChild);
+     //console.log(parent.lastElementChild);
+
+     //get the output as monday without using parent
+     const dayOne = document.querySelector('.day');
+     //console.log(dayOne);
+
+     //get the parent using the child element
+     //console.log(dayOne.parentElement);
+
+     //get the sibling using the child
+     //console.log(dayOne.nextElementSibling);
+
+     console.log("NODES:", parent.childNodes);
+</script>
+</html>
