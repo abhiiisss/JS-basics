@@ -6,7 +6,7 @@ function sayMyName(){
     console.log("H");
     console.log("I");
     console.log("S");
-} // a set o f codes which we had to execute repedeatedly
+} // a set of codes which we had to execute repedeatedly
 
 // sayMyName()
 
@@ -46,7 +46,7 @@ function loginUserMessage(username){
 
 
 function loginUserMessage(username){
-    if(!username){ // same as username === uundefined
+    if(!username){ // same as username === undefined
         //  console.log("Please enter a UserName");
          return
     }

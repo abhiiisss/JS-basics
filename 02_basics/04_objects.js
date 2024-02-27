@@ -71,7 +71,7 @@ const newUser = [
 //Destructuring of objects
 
 const course = {
-    course : "hsitory",
+    course : "history",
     Price: "999",
     courseInstructor : "abhis"
 }
@@ -84,11 +84,11 @@ console.log(Instructor);
 
 // json
 
-{
-    "name": "ABHIS",
-    "age": "22"
-    "location": "Mumbai"
-} //json file format
+// {
+//     "name": "ABHIS",
+//     "age": "22"
+//     "location": "Mumbai"
+// } //json file format
 
 
 [

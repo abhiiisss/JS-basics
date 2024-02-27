@@ -39,4 +39,4 @@ const addThree = (num1, num2) =>  ({newUser:"abhis"})
 
 console.log(addThree(7,5));
 
-// if the have wrapped the variable in curly braces{}, the have to use return, if it is not wrapped in the curly braces the do not have to use return
+// if the have wrapped the variable in curly braces{}, then we have to use return, if it is not wrapped in the curly braces then we do not have to use return

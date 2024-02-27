@@ -9,9 +9,9 @@
 const email = " "
 
 if (email) {
-    //console.log("we got the email");
+    console.log("we got the email");
 } else {
-    //console.log("empty");
+    console.log("empty");
 } /// the output shows the got the email cuz the input is truthy value.
 
 
