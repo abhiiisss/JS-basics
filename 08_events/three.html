@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Three Async</h1>
+    <button id="startId">start</button>
+    <button id="stopId">stop</button>
+</body>
+<script>
+    //using set interval
+    
+    // console.log(startId);
+    // console.log(stopId);
+
+    //-----Assignment---------
+    const startId = document.getElementById("startId");
+    const stopId = document.getElementById("stopId");
+
+    let intervalId;
+
+    const start  = function(){
+        console.log("It is Started");
+    }
+
+    startId.addEventListener('click', function(){
+        intervalId = setInterval(start, 1000)
+        //console.log()
+    })
+
+    stopId.addEventListener('click', function(){
+        clearInterval(intervalId);
+        console.log("Stopped");
+    })
+    
+
+
+     
+
+     
+</script>
+</html>
